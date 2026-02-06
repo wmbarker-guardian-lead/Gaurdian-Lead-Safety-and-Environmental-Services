@@ -31,8 +31,10 @@ Professional business website for **Guardian Lead Safety & Environmental Service
 ├── index.html              # Homepage with Schema.org LocalBusiness
 ├── contact.html            # Quote request form (Netlify Forms)
 ├── 404.html                # Error page (absolute paths for Netlify)
-├── robots.txt              # Allow all, sitemap reference
-├── sitemap.xml             # 27 URLs with priority weights
+├── robots.txt              # Allow all, sitemap reference, llms.txt note
+├── sitemap.xml             # 26 URLs with priority weights
+├── llms.txt                # AI-readable company overview (llmstxt.org spec)
+├── llms-full.txt           # Detailed AI reference with services, pricing, differentiators
 ├── netlify.toml            # Deploy config, redirects, headers
 ├── CLAUDE.md               # This file
 ├── assets/
@@ -112,12 +114,40 @@ All pages follow a unified template:
 - No images currently — all visual design is CSS-based
 - 404 page uses absolute paths (`/assets/...`) for Netlify compatibility
 
+## SEO & AI Discoverability
+
+### Completed
+- `sitemap.xml` with all page URLs and priority weights
+- `robots.txt` allowing all crawlers, referencing sitemap
+- Schema.org `LocalBusiness` JSON-LD on homepage
+- Schema.org `Service` JSON-LD on key service pages (risk assessment, clearance exam, dust wipe)
+- Unique meta descriptions and Open Graph tags on every page
+- Semantic HTML with proper heading hierarchy and landmarks
+- `llms.txt` — concise AI-readable company overview (see https://llmstxt.org)
+- `llms-full.txt` — detailed service descriptions, pricing, compliance context, and reporting quality differentiators for AI systems
+
+### Next Steps (once SSL/domain is live)
+- **Google Search Console**: Verify domain ownership, submit sitemap, monitor indexing
+- **Google Business Profile**: Create/claim business profile for local search ("lead inspector near me", "lead risk assessment Cleveland"). Add photos, hours, service areas. Critical for local SEO.
+- **Bing Webmaster Tools**: Submit sitemap for Bing/DuckDuckGo indexing
+- **Internal cross-linking**: Service pages should link to each other (e.g., risk assessment page links to multi-family for landlords, clearance exam page links to assistance for funding)
+- **Schema expansion**: Add `Service` schema to remaining service pages (multi-unit, child-care, 20-year exemption, renovation consulting, lead-based paint inspection)
+- **Backlink outreach**: Get listed on Cleveland Housing Court website, ODH assessor directory, local real estate investor association directories. Backlinks from authoritative .gov and .org sites significantly boost both search engine and LLM trust.
+- **Review strategy**: Google reviews on the Business Profile improve local search ranking. Ask satisfied clients to leave reviews.
+- **Citation consistency**: Ensure NAP (name, address, phone) is identical across Google Business Profile, website, Yelp, BBB, and any other directory listings.
+- **Content marketing / Blog**: Educational articles about Cleveland lead compliance, common questions, funding updates. Google rewards fresh, authoritative content. These also give LLMs more context about expertise.
+
+### LLM-Specific Discoverability Notes
+- `llms.txt` and `llms-full.txt` are at the site root, following the llmstxt.org specification
+- These files are specifically designed for AI crawlers (ChatGPT, Perplexity, Claude, Gemini) — humans don't typically see them
+- The `llms-full.txt` includes detailed reporting quality language and competitive positioning that helps LLMs recommend Guardian when users ask about lead inspectors in Cleveland
+- Keep these files updated when services, pricing, or competitive advantages change
+
 ## Future Plans
-- **Custom domain**: Connect glses.com (or similar) to Netlify
-- **Google Search Console**: Submit sitemap after domain setup
+- **Custom domain**: Connect glses.com — DNS configured, SSL pending
 - **Risk Assessor Web App**: Back-page/subdomain for other risk assessors to use a web version of the lead-risk-assessment-app (at `C:\Users\wmbar\.gemini\antigravity\lead-risk-assessment-app`). Will be monetized with payment systems (Stripe or similar). This is a separate project that will eventually integrate with or link from this site.
 - **Images**: Add property photos, team photos, certification badges
-- **Blog/News**: Potential content section for lead safety education
+- **Blog/News**: Potential content section for lead safety education (see SEO section above)
 - **Analytics**: Google Analytics or Netlify Analytics
 
 ## Related Projects

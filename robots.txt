@@ -2,3 +2,8 @@ User-agent: *
 Allow: /
 
 Sitemap: https://glses.com/sitemap.xml
+
+# AI / LLM discoverability
+# See https://llmstxt.org for specification
+# llms.txt: concise company overview for AI systems
+# llms-full.txt: detailed service descriptions and context
