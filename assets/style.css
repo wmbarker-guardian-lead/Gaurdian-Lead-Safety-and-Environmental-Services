@@ -141,28 +141,32 @@ p { margin: 0 0 1rem; }
   background: var(--brand);
 }
 
-/* "For Risk Assessors" button — right-aligned, separated */
-.nav-right {
+/* "For Risk Assessors" + "Get a Quote" — right-aligned group */
+li.nav-right {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   margin-left: auto;
+  list-style: none;
 }
 
-.nav-list .btn-assessor {
+.btn-assessor {
   border: 1.5px solid rgba(255,255,255,.35);
-  color: #e2e8f0;
+  color: #e2e8f0 !important;
   padding: 7px 16px;
   font-size: .8125rem;
   font-weight: 600;
   border-radius: 999px;
   transition: all var(--transition);
   white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
 }
 
-.nav-list .btn-assessor:hover {
+.btn-assessor:hover {
   border-color: var(--accent);
-  color: var(--accent);
+  color: var(--accent) !important;
   background: rgba(245,158,11,.08);
 }
 
@@ -209,15 +213,17 @@ p { margin: 0 0 1rem; }
 /* Mobile hamburger */
 .nav-toggle {
   display: none;
-  background: none;
-  border: none;
+  background: rgba(255,255,255,.1);
+  border: 2px solid rgba(255,255,255,.3);
+  border-radius: 8px;
   color: #fff;
   cursor: pointer;
-  padding: 8px;
+  padding: 6px;
   line-height: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.nav-toggle svg { width: 36px; height: 36px; }
+.nav-toggle svg { width: 32px; height: 32px; stroke-width: 2.5; }
 
 /* Old nav compat — map old structure to new styles */
 nav { background: var(--bg-dark); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,0,0,.2); }
@@ -686,51 +692,108 @@ footer .copy { margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(2
   .nav-list {
     display: none;
     flex-direction: column;
-    width: 100%;
     position: fixed;
-    top: 64px;
-    left: 0;
+    top: 0;
     right: 0;
-    bottom: 0;
+    width: 75%;
+    max-width: 320px;
+    height: 100vh;
     background: var(--bg-dark);
-    border-top: 1px solid rgba(255,255,255,.08);
-    padding: 20px 24px;
-    box-shadow: 0 8px 24px rgba(0,0,0,.3);
-    gap: 2px;
+    padding: 80px 20px 32px;
+    gap: 0;
     overflow-y: auto;
     z-index: 99;
+    -webkit-overflow-scrolling: touch;
+    box-shadow: -4px 0 24px rgba(0,0,0,.4);
   }
 
   .nav-list.open { display: flex; }
 
-  .nav-list a { padding: 14px 16px; font-size: 1rem; }
+  /* Mobile nav items — bright, large, tappable */
+  .nav-list > li {
+    border-bottom: 1px solid rgba(255,255,255,.06);
+  }
 
+  .nav-list > li > a {
+    padding: 16px 0;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .nav-list > li > a:hover {
+    background: none;
+    color: var(--accent);
+  }
+
+  /* Mobile submenus — hidden by default, tap to expand */
   .nav-list > li > .submenu {
     position: static;
     transform: none;
     box-shadow: none;
     border: none;
-    background: rgba(255,255,255,.04);
-    border-radius: 8px;
-    margin-top: 4px;
+    background: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0 0 8px 16px;
     opacity: 1;
     visibility: visible;
+    display: none;
+  }
+
+  .nav-list > li.mobile-open > .submenu {
+    display: block;
+  }
+
+  .nav-list .submenu a {
+    color: #94a3b8 !important;
+    padding: 10px 0;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .nav-list .submenu a:hover {
+    color: #fff !important;
+    background: none;
+  }
+
+  /* Chevron indicator for items with submenus */
+  .nav-list > li:has(.submenu) > a::after {
+    content: "\25B8";
+    float: right;
+    font-size: .75rem;
+    transition: transform var(--transition);
+    margin-top: 4px;
+  }
+
+  .nav-list > li.mobile-open:has(.submenu) > a::after {
+    transform: rotate(90deg);
   }
 
   /* Mobile: stack the right-aligned buttons */
   .nav-right {
     flex-direction: column;
     margin-left: 0;
-    gap: 8px;
-    margin-top: 12px;
-    padding-top: 12px;
-    border-top: 1px solid rgba(255,255,255,.08);
+    gap: 12px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,.12);
+    border-bottom: none;
+  }
+
+  .nav-right a {
+    text-align: center;
+    padding: 14px 16px !important;
+    font-size: 1rem !important;
+    border-radius: 999px;
   }
 
   .nav-list .btn-assessor {
     text-align: center;
-    padding: 12px 16px;
+    padding: 14px 16px;
     font-size: 1rem;
+    border-width: 2px;
+    border-color: rgba(255,255,255,.25);
   }
 
   /* Old nav mobile */

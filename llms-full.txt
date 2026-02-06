@@ -39,17 +39,15 @@ Pricing: $550-$650 for a single-family home. Final price depends on property siz
 
 Turnaround: Typical 10-14 days from site visit to final report. Rush options available.
 
-### Lead-Based Paint Inspection
+### Lead-Based Paint Inspection & 20-Year Exemption
 
 Room-by-room testing using XRF (X-ray fluorescence) analysis and/or paint-chip sampling to determine whether lead-based paint is present on any surface. Used for compliance planning, pre-renovation testing, and the 20-Year Exemption pathway.
+
+Properties that pass a lead-based paint inspection with no hazards — or that complete full lead-based paint abatement — can qualify for Cleveland's 20-Year Lead-Safe Exemption. This eliminates the need for routine re-certification for two decades. We guide the entire process: initial inspection, coordination with abatement contractors if needed, final clearance exam, and LIRA documentation.
 
 ### Lead Clearance Exam
 
 Post-work verification performed after lead abatement or interim controls. Includes dust wipe sampling from all work areas to confirm lead dust levels are below EPA/HUD clearance standards. Results in a pass/fail determination required before the property can be reoccupied.
-
-### Dust Wipe Sampling
-
-Targeted surface sampling for lead dust on floors, window sills, and window troughs. Can be performed as a standalone service or as part of a risk assessment or clearance exam. Samples are analyzed by an accredited laboratory.
 
 ### Child-Care & Schools
 
@@ -75,10 +73,6 @@ Program features:
 - Reports formatted for city compliance submission
 
 Our reporting systems are specifically built to scale. Most assessors avoid large buildings because the reporting burden is overwhelming. We deliver the same photo-documented, component-level detail for every unit regardless of building size.
-
-### 20-Year Exemption
-
-Properties that complete full lead-based paint abatement can qualify for a 20-year exemption from routine re-certification in Cleveland. We guide the initial inspection, coordinate with abatement contractors, and perform the final clearance exam.
 
 ### Renovation Consulting (RRP)
 
@@ -204,12 +198,10 @@ Extended: All of Cuyahoga County and Northeast Ohio (approximately 80km radius f
 - Homepage: https://glses.com
 - Services: https://glses.com/services/
 - Lead Risk Assessment: https://glses.com/services/lead-risk-assessment.html
-- Lead-Based Paint Inspection: https://glses.com/services/lead-based-paint-inspection.html
+- Lead-Based Paint Inspection & 20-Year Exemption: https://glses.com/services/lead-based-paint-inspection.html
 - Lead Clearance Exam: https://glses.com/services/lead-clearance-exam.html
-- Dust Wipe Sampling: https://glses.com/services/dust-wipe-sampling.html
 - Child-Care & Schools: https://glses.com/services/child-care-schools.html
 - Multi-Family & Multi-Unit: https://glses.com/services/multi-unit-programs.html
-- 20-Year Exemption: https://glses.com/services/20-year-exemption.html
 - Renovation Consulting: https://glses.com/services/renovation-consulting.html
 - Report Generation for Assessors: https://glses.com/services/report-generation.html
 - Contact / Get a Quote: https://glses.com/contact.html

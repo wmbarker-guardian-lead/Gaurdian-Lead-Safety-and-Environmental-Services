@@ -12,7 +12,13 @@
       "WebFetch(domain:classy-ganache-7c76d1.netlify.app)",
       "Bash(Remove-Item \"C:\\\\Users\\\\wmbar\\\\OneDrive\\\\Documents\\\\GitHub\\\\guardian-lead-safety\\\\Gardian-Lead-Safety-and-Environmental-Services\\\\services\\\\daycare-facility.html\")",
       "mcp__PDF_Tools_-_Analyze__Extract__Fill__Compare__read_pdf_content",
-      "Bash(powershell:*)"
+      "Bash(powershell:*)",
+      "Bash(powershell.exe -NoProfile -Command \"Get-ChildItem -Path ''C:\\\\Users\\\\wmbar\\\\OneDrive\\\\Documents\\\\GitHub\\\\guardian-lead-safety\\\\Gardian-Lead-Safety-and-Environmental-Services'' -Recurse -Filter ''*.html'' | Select-Object FullName | Format-Table -AutoSize\")",
+      "Bash(powershell.exe:*)",
+      "Bash(ls:*)",
+      "Bash(grep:*)",
+      "Bash(git status:*)",
+      "Bash(python:*)"
     ]
   }
 }

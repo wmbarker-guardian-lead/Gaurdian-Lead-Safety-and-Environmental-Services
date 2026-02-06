@@ -23,6 +23,18 @@
   to = "/services/child-care-schools.html"
   status = 301
 
+# Dust Wipe Sampling removed — redirect to Lead Clearance Exam
+[[redirects]]
+  from = "/services/dust-wipe-sampling.html"
+  to = "/services/lead-clearance-exam.html"
+  status = 301
+
+# 20-Year Exemption merged into Lead-Based Paint Inspection
+[[redirects]]
+  from = "/services/20-year-exemption.html"
+  to = "/services/lead-based-paint-inspection.html"
+  status = 301
+
 # Security headers
 [[headers]]
   for = "/*"
