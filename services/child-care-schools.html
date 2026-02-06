@@ -4,17 +4,156 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Child-Care & Schools | Guardian Lead Safety</title>
-  <meta name="description" content="Specialized lead safety inspections and risk assessments for child-care centers, preschools, and schools.">
+  <meta name="description" content="Specialized lead safety inspections and risk assessments for child-care centers, preschools, and schools. Protecting the spaces where children learn and grow.">
   <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/style.css">
   <meta property="og:title" content="Child-Care & Schools | Guardian Lead Safety">
   <meta property="og:description" content="Specialized lead safety inspections and risk assessments for child-care centers, preschools, and schools.">
   <meta property="og:type" content="website">
+  <style>
+    /* --- Child-Care & Schools — Soft, Warm Theme --- */
+    .cc-page .hero {
+      background: linear-gradient(135deg, #fdf2f8 0%, #faf5ff 50%, #eff6ff 100%);
+      border-bottom: 3px solid #f9a8d4;
+    }
+    .cc-page .hero .h1 {
+      color: #831843;
+    }
+    .cc-page .hero .lead {
+      color: #6b2170;
+    }
+
+    /* Section backgrounds */
+    .cc-page .section.alt {
+      background: linear-gradient(180deg, #fdf2f8 0%, #faf5ff 100%);
+    }
+
+    /* Cards */
+    .cc-page .card {
+      border-top: 4px solid #e879a0;
+      background: #fff;
+      box-shadow: 0 4px 16px rgba(190, 100, 140, .08);
+    }
+    .cc-page .card:hover {
+      box-shadow: 0 8px 28px rgba(190, 100, 140, .14);
+    }
+    .cc-page .card .h2 {
+      color: #831843;
+    }
+
+    /* Feature cards */
+    .cc-feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .cc-feature {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 2rem;
+      border-left: 4px solid #e879a0;
+      box-shadow: 0 2px 10px rgba(190, 100, 140, .07);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .cc-feature:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(190, 100, 140, .12);
+    }
+    .cc-feature-icon {
+      font-size: 2rem;
+      margin-bottom: .75rem;
+      display: block;
+    }
+    .cc-feature h3 {
+      color: #831843;
+      font-size: 1.1rem;
+      margin-bottom: .5rem;
+    }
+    .cc-feature p {
+      color: var(--text-muted);
+      font-size: .95rem;
+      line-height: 1.6;
+    }
+
+    /* Checklist styling */
+    .cc-page .checklist li::before {
+      color: #db2777;
+    }
+
+    /* Quote / callout */
+    .cc-callout {
+      background: linear-gradient(135deg, #fce7f3 0%, #f3e8ff 100%);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .cc-callout p {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #6b2170;
+      line-height: 1.7;
+      font-style: italic;
+    }
+
+    /* CTA section */
+    .cc-page .cc-cta {
+      background: linear-gradient(135deg, #831843 0%, #6b21a8 100%);
+      color: #fff;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+    .cc-cta .h2 {
+      color: #fff;
+      margin-bottom: .75rem;
+    }
+    .cc-cta p {
+      color: rgba(255,255,255,.85);
+      max-width: 540px;
+      margin: 0 auto 1.5rem;
+      font-size: 1.05rem;
+    }
+    .cc-cta .btn-primary {
+      background: #fff;
+      color: #831843;
+      border-color: #fff;
+    }
+    .cc-cta .btn-primary:hover {
+      background: #fce7f3;
+      border-color: #fce7f3;
+    }
+
+    /* Who we serve badges */
+    .cc-badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .cc-badge {
+      background: #fff;
+      border: 1px solid #f9a8d4;
+      border-radius: 50px;
+      padding: .6rem 1.4rem;
+      font-size: .9rem;
+      font-weight: 500;
+      color: #831843;
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+    }
+    .cc-badge span {
+      font-size: 1.1rem;
+    }
+  </style>
 </head>
-<body>
+<body class="cc-page">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container">
@@ -79,36 +218,82 @@
     <section class="hero">
       <div class="container">
         <h1 class="h1">Child-Care & Schools</h1>
-        <p class="lead">Because children deserve safe places to learn and grow.</p>
-      </div>
-    </section>
-
-    <section class="section alt">
-      <div class="container grid-2">
-        <div class="card">
-          <h2 class="h2">Why Lead Safety Matters</h2>
-          <ul class="checklist">
-            <li>Applies to preschools, daycares, and schools where children under 6 spend ≥6 hours/week</li>
-            <li>Clearance exams must be completed before occupancy</li>
-            <li>Certification must be renewed regularly</li>
-            <li>Required under HUD and Ohio Department of Health regulations</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h2 class="h2">Our Commitment</h2>
-          <ul class="checklist">
-            <li>Specialized risk assessments for child-occupied facilities</li>
-            <li>Documentation support for ODH compliance</li>
-            <li>Guidance on interim controls and hazard reduction</li>
-            <li>Peace of mind for families and staff</li>
-          </ul>
+        <p class="lead">Protecting the spaces where little ones learn, play, and grow.</p>
+        <div class="cc-badges">
+          <div class="cc-badge"><span>&#127891;</span> Preschools</div>
+          <div class="cc-badge"><span>&#128118;</span> Daycares</div>
+          <div class="cc-badge"><span>&#9989;</span> Head Start Programs</div>
+          <div class="cc-badge"><span>&#127979;</span> K-6 Schools</div>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container center">
-        <h2 class="h2">Ready to protect children in your care?</h2>
+      <div class="container">
+        <div class="cc-callout">
+          <p>Every child deserves to learn in a space free from lead hazards. We help child-care providers and schools meet compliance requirements with care, thoroughness, and minimal disruption to your daily routine.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <h2 class="h2" style="text-align:center; color:#831843; margin-bottom:.5rem;">Why Lead Safety Matters Here</h2>
+        <p style="text-align:center; color:#6b2170; max-width:640px; margin:0 auto 2rem; font-size:1.05rem;">Children under 6 are the most vulnerable to lead exposure. Facilities where they spend significant time have specific compliance obligations.</p>
+        <div class="cc-feature-grid">
+          <div class="cc-feature">
+            <span class="cc-feature-icon">&#128220;</span>
+            <h3>Regulatory Requirements</h3>
+            <p>Facilities where children under 6 spend 6 or more hours per week must meet HUD and Ohio Department of Health lead safety standards.</p>
+          </div>
+          <div class="cc-feature">
+            <span class="cc-feature-icon">&#128269;</span>
+            <h3>Thorough Inspections</h3>
+            <p>We assess every surface children interact with — window sills, door frames, floors, walls, and play areas — with careful attention to detail.</p>
+          </div>
+          <div class="cc-feature">
+            <span class="cc-feature-icon">&#128203;</span>
+            <h3>Clearance Before Occupancy</h3>
+            <p>Clearance exams must be completed before children can safely occupy a newly renovated or remediated space.</p>
+          </div>
+          <div class="cc-feature">
+            <span class="cc-feature-icon">&#128197;</span>
+            <h3>Ongoing Certification</h3>
+            <p>Lead-safe certification requires regular renewal. We help you stay ahead of deadlines so your facility remains in good standing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2">
+        <div class="card">
+          <h2 class="h2">What We Provide</h2>
+          <ul class="checklist">
+            <li>Comprehensive risk assessments tailored for child-occupied facilities</li>
+            <li>XRF testing and dust wipe sampling of all accessible surfaces</li>
+            <li>Detailed reports with clear findings and recommendations</li>
+            <li>Guidance on interim controls and hazard reduction strategies</li>
+            <li>Full documentation support for ODH licensing and compliance</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2 class="h2">Our Promise to You</h2>
+          <ul class="checklist">
+            <li>Minimal disruption to your children and staff during inspections</li>
+            <li>Clear, jargon-free communication about findings and next steps</li>
+            <li>Fast turnaround so you can meet licensing deadlines</li>
+            <li>A genuine commitment to the health of every child in your care</li>
+            <li>Ongoing support and guidance long after the inspection is complete</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="cc-cta">
+      <div class="container">
+        <h2 class="h2">Ready to protect the children in your care?</h2>
+        <p>Let's make sure your facility is safe, compliant, and ready for the little ones who depend on it every day.</p>
         <a href="../contact.html" class="btn btn-primary">Schedule a Consultation</a>
       </div>
     </section>
