@@ -11,7 +11,7 @@ Professional business website for **Guardian Lead Safety & Environmental Service
 
 ## Tech Stack
 - **Type**: Pure static HTML/CSS/JS — no framework, no build process
-- **Pages**: 28 HTML files across 5 sections
+- **Pages**: 27 HTML files across 5 sections
 - **CSS**: Custom design system with CSS variables (`assets/style.css`)
 - **JS**: Vanilla JS — hamburger menu, dropdowns, smooth scroll, dynamic year (`assets/app.js`)
 - **Favicon**: SVG shield with "G" monogram (`assets/favicon.svg`)
@@ -39,7 +39,7 @@ Professional business website for **Guardian Lead Safety & Environmental Service
 │   ├── style.css           # Full design system
 │   ├── app.js              # Navigation, interactions
 │   └── favicon.svg         # Shield logo
-├── services/               # 12 service pages
+├── services/               # 11 service pages
 │   ├── index.html
 │   ├── lead-risk-assessment.html
 │   ├── lead-based-paint-inspection.html
@@ -47,11 +47,10 @@ Professional business website for **Guardian Lead Safety & Environmental Service
 │   ├── lead-clearance-exam.html    # Primary clearance page
 │   ├── dust-wipe-sampling.html
 │   ├── dust-soil-sampling.html
-│   ├── daycare-facility.html
 │   ├── 20-year-exemption.html
 │   ├── renovation-consulting.html
 │   ├── multi-unit-programs.html
-│   └── child-care-schools.html
+│   └── child-care-schools.html     # Includes daycare content (merged)
 ├── process/                # 4 process pages
 │   ├── timeline.html
 │   ├── prep.html
@@ -109,6 +108,7 @@ All pages follow a unified template:
 
 ## Notes
 - Two clearance exam pages exist intentionally: `clearance-exam.html` (legacy links) and `lead-clearance-exam.html` (primary/new nav)
+- `daycare-facility.html` was merged into `child-care-schools.html`; a 301 redirect exists in `netlify.toml`
 - No images currently — all visual design is CSS-based
 - 404 page uses absolute paths (`/assets/...`) for Netlify compatibility
 

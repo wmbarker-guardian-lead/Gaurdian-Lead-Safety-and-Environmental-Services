@@ -17,6 +17,12 @@
   to = "/resources/index.html"
   status = 200
 
+# Daycare page merged into Child-Care & Schools
+[[redirects]]
+  from = "/services/daycare-facility.html"
+  to = "/services/child-care-schools.html"
+  status = 301
+
 # Security headers
 [[headers]]
   for = "/*"
