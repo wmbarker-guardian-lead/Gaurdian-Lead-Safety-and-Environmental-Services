@@ -388,6 +388,16 @@ section + .section.alt { border-top: none; }
   border-color: var(--brand-100);
 }
 
+/* Static (non-clickable) cards — no hover effects, muted heading */
+.card-static { cursor: default; }
+.card-static:hover {
+  box-shadow: 0 2px 8px rgba(30,64,175,.04), 0 1px 3px rgba(30,64,175,.03);
+  border-color: var(--line);
+  transform: none;
+}
+.card-static h3 { color: var(--text); }
+.card-static p { margin-top: 8px; font-size: .9375rem; line-height: 1.6; }
+
 a.card {
   text-decoration: none;
   color: inherit;
