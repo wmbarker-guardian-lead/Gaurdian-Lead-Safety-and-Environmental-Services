@@ -338,6 +338,11 @@ p { margin: 0 0 1rem; }
   margin-top: 28px;
 }
 
+/* Compact hero for subpages */
+.hero-compact {
+  padding: 32px 0 28px;
+}
+
 /* Old header compat */
 .header {
   background: linear-gradient(135deg, #eff6ff 0%, #fffbf5 50%, #f0f4ff 100%);
