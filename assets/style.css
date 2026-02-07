@@ -403,15 +403,11 @@ a.card:hover {
 a.card h3 { color: var(--brand); }
 a.card p { color: var(--text-muted); }
 
-.grid-3 a.card {
-  text-align: left;
-  font-weight: 700;
-  font-size: 1.0625rem;
-  padding: 32px 24px;
-  color: var(--text);
+a.card h3 + p {
+  margin-top: 8px;
+  font-size: .9375rem;
+  line-height: 1.6;
 }
-
-.grid-3 a.card:hover { color: var(--brand); }
 
 /* --- Buttons --- */
 .btn {
