@@ -16,7 +16,8 @@
   --text-muted: #475569;
   --text-light: #64748b;
   --bg: #ffffff;
-  --bg-alt: #f9fafb;
+  --bg-alt: #f8f9fc;
+  --bg-warm: #fefdfb;
   --bg-dark: #0f172a;
   --bg-dark-lighter: #1e293b;
   --line: #e5e7eb;
@@ -348,7 +349,13 @@ p { margin: 0 0 1rem; }
 /* --- Sections --- */
 section { padding: 72px 0; }
 .section { padding: 72px 0; }
-.section.alt { background: linear-gradient(180deg, var(--bg-alt) 0%, #fefdfb 100%); }
+.section.alt { background: linear-gradient(180deg, #f0f4ff 0%, #fefdfb 50%, #f8f9fc 100%); }
+
+/* Section divider — subtle gradient line between sections */
+section + section { border-top: 1px solid var(--line-light); }
+.section.alt + section,
+section + .section.alt { border-top: none; }
+.cta-banner { border-top: none; }
 
 /* --- Grid System --- */
 .grid { display: grid; gap: 24px; }
@@ -370,17 +377,17 @@ section { padding: 72px 0; }
 .card {
   background: var(--bg);
   border: 1px solid var(--line);
-  border-top: 3px solid var(--brand-light);
+  border-left: 3px solid var(--brand-light);
   border-radius: var(--radius-lg);
   padding: 28px;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 2px 8px rgba(30,64,175,.04), 0 1px 3px rgba(30,64,175,.03);
   transition: box-shadow var(--transition), transform var(--transition), border-color var(--transition);
 }
 
 .card:hover {
-  box-shadow: var(--shadow), 0 0 0 1px rgba(245,158,11,.08);
-  border-color: #e5e0d8;
-  border-top-color: var(--brand);
+  box-shadow: 0 6px 20px rgba(30,64,175,.08), 0 2px 6px rgba(30,64,175,.04);
+  border-color: var(--line);
+  border-left-color: var(--brand);
 }
 
 a.card {
@@ -391,16 +398,16 @@ a.card {
 
 a.card:hover {
   transform: translateY(-2px);
-  box-shadow: var(--shadow-lg), 0 0 0 1px rgba(245,158,11,.08);
-  border-color: #ddd8d0;
-  border-top-color: var(--brand);
+  box-shadow: 0 10px 30px rgba(30,64,175,.1), 0 4px 8px rgba(30,64,175,.05);
+  border-color: var(--brand-100);
+  border-left-color: var(--brand);
 }
 
 a.card h3 { color: var(--brand); }
 a.card p { color: var(--text-muted); }
 
 .grid-3 a.card {
-  text-align: center;
+  text-align: left;
   font-weight: 700;
   font-size: 1.0625rem;
   padding: 32px 24px;
@@ -716,7 +723,7 @@ footer .copy { margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(2
 .cta-banner h2 { color: #fff; }
 .cta-banner p { color: rgba(255,255,255,.85); max-width: 560px; margin: 12px auto 24px; }
 .cta-banner .btn-primary { background: #fff; color: var(--brand); border-color: #fff; }
-.cta-banner .btn-primary:hover { background: #fefbf4; color: var(--brand-dark); box-shadow: 0 4px 16px rgba(30,20,10,.18); }
+.cta-banner .btn-primary:hover { background: #f0f4ff; color: var(--brand-dark); box-shadow: 0 4px 16px rgba(30,64,175,.2); }
 
 /* Tablet: grid-4 → 2 columns */
 @media (max-width: 1024px) and (min-width: 769px) {
