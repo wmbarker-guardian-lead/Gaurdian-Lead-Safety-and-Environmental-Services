@@ -247,6 +247,8 @@ p { margin: 0 0 1rem; }
   visibility: visible;
 }
 
+.submenu { list-style: none; padding-left: 0; }
+
 .submenu a {
   display: block;
   color: #cbd5e1 !important;
@@ -264,17 +266,32 @@ p { margin: 0 0 1rem; }
 /* Mobile hamburger button */
 .nav-toggle {
   display: none;
-  background: rgba(255,255,255,.12);
-  border: 2px solid rgba(255,255,255,.35);
-  border-radius: 8px;
+  background: none;
+  border: none;
   color: #fff;
   cursor: pointer;
-  padding: 6px;
+  padding: 8px;
   line-height: 0;
   -webkit-tap-highlight-color: transparent;
 }
 
-.nav-toggle svg { width: 32px; height: 32px; stroke-width: 2.5; }
+.nav-toggle svg { width: 28px; height: 28px; stroke-width: 2; }
+
+/* Backdrop overlay behind slide menu */
+.nav-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  z-index: 98;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+
+.nav-backdrop.open { display: block; }
+
+/* Close button — only visible on mobile (injected by JS) */
+.nav-close { display: none; }
 
 /* --- Contact Strip --- */
 .contact-strip {
@@ -703,7 +720,7 @@ footer .copy { margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(2
    RESPONSIVE — Mobile (768px and below)
    ===================================================================== */
 @media (max-width: 768px) {
-  .hero { padding: 56px 0 48px; }
+  .hero { padding: 48px 0 40px; }
   section, .section { padding: 48px 0; }
 
   /* Reset nav flex for mobile — let nav-list be the slide panel */
@@ -712,48 +729,94 @@ footer .copy { margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(2
     display: contents;
   }
 
-  /* Show hamburger button */
-  .nav-toggle { display: block; }
+  /* Show hamburger button, push to right */
+  .nav-toggle {
+    display: block;
+    margin-left: auto;
+  }
 
   /* Hide desktop header-actions */
   .header-actions { display: none; }
 
   /* Nav list becomes a slide-in panel from right */
   .nav-list {
-    display: none;
     flex-direction: column;
+    align-items: stretch;
     position: fixed;
     top: 0;
     right: 0;
-    width: 75%;
-    max-width: 320px;
+    width: 80%;
+    max-width: 300px;
     height: 100vh;
+    height: 100dvh;
     background: var(--bg-dark);
-    padding: 80px 20px 32px;
+    padding: 0 24px 32px;
     gap: 0;
     overflow-y: auto;
     z-index: 99;
     -webkit-overflow-scrolling: touch;
     box-shadow: -4px 0 24px rgba(0,0,0,.4);
+    transform: translateX(100%);
+    transition: transform .25s cubic-bezier(.4,0,.2,1);
+    display: flex;
+    text-align: left;
   }
 
-  .nav-list.open { display: flex; }
+  .nav-list.open {
+    transform: translateX(0);
+  }
 
-  /* Mobile nav items — bright, large, tappable */
+  /* Close button at top of slide panel — right-aligned */
+  .nav-close {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 16px 0 12px;
+    margin-bottom: 0;
+    border-bottom: none !important;
+  }
+
+  .nav-close button {
+    background: none;
+    border: none;
+    color: rgba(255,255,255,.5);
+    cursor: pointer;
+    padding: 8px;
+    line-height: 0;
+    -webkit-tap-highlight-color: transparent;
+    transition: color var(--transition);
+  }
+
+  .nav-close button:hover,
+  .nav-close button:active { color: #fff; }
+  .nav-close svg { width: 22px; height: 22px; }
+
+  /* Mobile nav items — LEFT-aligned, clean, tappable */
   .nav-list > li {
-    border-bottom: 1px solid rgba(255,255,255,.06);
+    border-bottom: 1px solid rgba(255,255,255,.08);
+    text-align: left;
   }
 
   .nav-list > li > a {
-    padding: 16px 0;
-    font-size: 1.125rem;
-    font-weight: 700;
+    padding: 14px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .nav-list > li > a:hover,
+  .nav-list > li > a:active {
+    background: none;
     color: #fff;
   }
 
-  .nav-list > li > a:hover {
-    background: none;
-    color: var(--accent);
+  /* Tap feedback */
+  .nav-list > li > a:active {
+    opacity: .7;
   }
 
   /* Mobile submenus — hidden by default, tap to expand */
@@ -765,7 +828,7 @@ footer .copy { margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(2
     background: none;
     border-radius: 0;
     margin: 0;
-    padding: 0 0 8px 16px;
+    padding: 0 0 8px 12px;
     opacity: 1;
     visibility: visible;
     display: none;
@@ -778,67 +841,79 @@ footer .copy { margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(2
   .nav-list .submenu a {
     color: #94a3b8 !important;
     padding: 10px 0;
-    font-size: 1rem;
+    font-size: .9375rem;
     font-weight: 500;
   }
 
-  .nav-list .submenu a:hover {
+  .nav-list .submenu a:hover,
+  .nav-list .submenu a:active {
     color: #fff !important;
     background: none;
   }
 
   /* Chevron indicator for items with submenus */
   .nav-list > li:has(.submenu) > a::after {
-    content: "\25B8";
-    float: right;
-    font-size: .75rem;
-    transition: transform var(--transition);
-    margin-top: 4px;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%2394a3b8'%3E%3Cpath fill-rule='evenodd' d='M7.21 14.77a.75.75 0 01.02-1.06L11.17 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z'/%3E%3C/svg%3E") no-repeat center;
+    background-size: contain;
+    flex-shrink: 0;
+    transition: transform .2s ease;
   }
 
   .nav-list > li.mobile-open:has(.submenu) > a::after {
     transform: rotate(90deg);
   }
 
-  /* Mobile actions — show inside slide panel */
+  /* Mobile actions — show inside slide panel, right after nav items */
   .mobile-actions {
     display: flex !important;
     flex-direction: column;
-    gap: 12px;
-    margin-top: 20px;
+    gap: 10px;
+    margin-top: 24px;
     padding-top: 20px;
-    border-top: 1px solid rgba(255,255,255,.12);
+    border-top: 1px solid rgba(255,255,255,.1) !important;
+    text-align: left;
   }
 
   .mobile-actions a {
     text-align: center;
-    padding: 14px 16px;
-    font-size: 1rem;
+    padding: 12px 16px;
     border-radius: 999px;
     font-weight: 700;
     text-decoration: none;
-    color: #e2e8f0;
   }
 
-  .mobile-actions .btn-assessor {
-    border: 2px solid rgba(255,255,255,.25);
-  }
-
-  .mobile-actions .btn-primary {
+  .mobile-actions .btn-primary,
+  .mobile-actions .btn {
     background: var(--brand-light);
     color: #fff;
+    font-size: .9375rem;
   }
 
-  /* "For Risk Assessors" in nav — style like other nav items on mobile */
-  .nav-list .btn-assessor {
+  /* "For Risk Assessors" — subtle on mobile too */
+  .mobile-actions .btn-assessor {
+    color: rgba(255,255,255,.4);
+    font-size: .8125rem;
+    font-weight: 500;
     border: none;
-    border-radius: 0;
-    padding: 16px 0;
-    font-size: 1.125rem;
-    font-weight: 700;
-    color: #fff;
-    display: block;
+    padding: 6px 0;
+    text-align: center;
   }
+
+  .mobile-actions .btn-assessor:hover {
+    color: rgba(255,255,255,.65);
+  }
+
+  /* "For Risk Assessors" in nav-list — hide if also in mobile-actions */
+  .nav-list .btn-assessor {
+    display: none;
+  }
+
+  /* Contact strip — tighter on small screens */
+  .contact-strip { font-size: .75rem; padding: 5px 0; }
+  .contact-strip .container { gap: 6px; }
 
   .footer-grid { grid-template-columns: 1fr; text-align: center; }
   .pricing-grid { grid-template-columns: 1fr; }

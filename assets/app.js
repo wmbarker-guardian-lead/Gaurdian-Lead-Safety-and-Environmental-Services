@@ -5,7 +5,37 @@
 
   var isMobile = function () { return window.innerWidth <= 768; };
 
-  /* --- Desktop dropdown menus (old nav style) --- */
+  /* --- Create backdrop overlay (for mobile slide menu) --- */
+  var backdrop = document.createElement('div');
+  backdrop.className = 'nav-backdrop';
+  document.body.appendChild(backdrop);
+
+  /* --- Create close button inside nav-list (for mobile) --- */
+  document.querySelectorAll('.nav-list').forEach(function (nav) {
+    var closeItem = document.createElement('li');
+    closeItem.className = 'nav-close';
+    closeItem.innerHTML = '<button aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M6 18L18 6"/></svg></button>';
+    nav.insertBefore(closeItem, nav.firstChild);
+
+    closeItem.querySelector('button').addEventListener('click', function () {
+      closeMenu();
+    });
+  });
+
+  /* --- Helper: close mobile menu --- */
+  function closeMenu() {
+    document.querySelectorAll('.nav-list').forEach(function (nl) {
+      nl.classList.remove('open');
+      nl.querySelectorAll('.mobile-open').forEach(function (li) { li.classList.remove('mobile-open'); });
+    });
+    backdrop.classList.remove('open');
+    document.body.style.overflow = '';
+    document.querySelectorAll('.nav-toggle').forEach(function (btn) {
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  }
+
+  /* --- Desktop dropdown menus --- */
   var closeTimeout;
   document.querySelectorAll('nav li.has-sub').forEach(function (li) {
     li.addEventListener('mouseenter', function () {
@@ -22,16 +52,15 @@
 
   /* --- Close menus on outside click --- */
   document.addEventListener('click', function (e) {
-    if (!e.target.closest('nav') && !e.target.closest('.site-header')) {
+    if (!e.target.closest('nav') && !e.target.closest('.site-header') && !e.target.closest('.nav-list')) {
       document.querySelectorAll('nav li.has-sub').forEach(function (li) { li.classList.remove('open'); });
-      document.querySelectorAll('.nav-list').forEach(function (nl) { nl.classList.remove('open'); });
-      // Reset hamburger
-      document.querySelectorAll('.nav-toggle').forEach(function (btn) {
-        btn.setAttribute('aria-expanded', 'false');
-        btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>';
-      });
-      document.body.style.overflow = '';
+      closeMenu();
     }
+  });
+
+  /* --- Backdrop click closes menu --- */
+  backdrop.addEventListener('click', function () {
+    closeMenu();
   });
 
   /* --- Mobile hamburger toggle --- */
@@ -42,16 +71,8 @@
       if (nav) {
         var isOpen = nav.classList.toggle('open');
         btn.setAttribute('aria-expanded', isOpen);
-        // Lock body scroll when menu is open
         document.body.style.overflow = isOpen ? 'hidden' : '';
-        // Swap icon: hamburger ↔ X
-        if (isOpen) {
-          btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 6l12 12M6 18L18 6"/></svg>';
-        } else {
-          btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>';
-          // Close all mobile submenus
-          nav.querySelectorAll('.mobile-open').forEach(function (li) { li.classList.remove('mobile-open'); });
-        }
+        backdrop.classList.toggle('open', isOpen);
       }
     });
   });
@@ -78,16 +99,15 @@
   document.querySelectorAll('.submenu a').forEach(function (a) {
     a.addEventListener('click', function () {
       if (!isMobile()) return;
-      var nav = a.closest('.nav-list');
-      if (nav) {
-        nav.classList.remove('open');
-        document.body.style.overflow = '';
-        // Reset hamburger icon
-        document.querySelectorAll('.nav-toggle').forEach(function (btn) {
-          btn.setAttribute('aria-expanded', 'false');
-          btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>';
-        });
-      }
+      closeMenu();
+    });
+  });
+
+  /* --- Close mobile menu when mobile-action links are clicked --- */
+  document.querySelectorAll('.mobile-actions a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      if (!isMobile()) return;
+      closeMenu();
     });
   });
 
@@ -106,6 +126,13 @@
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     });
+  });
+
+  /* --- Handle resize: clean up mobile state if resized to desktop --- */
+  window.addEventListener('resize', function () {
+    if (!isMobile()) {
+      closeMenu();
+    }
   });
 
 })();
