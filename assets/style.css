@@ -354,6 +354,8 @@ section { padding: 72px 0; }
 .grid { display: grid; gap: 24px; }
 .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
 .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.grid-5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px; }
 .cards { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
 .two-col { display: grid; gap: 24px; }
 
@@ -716,6 +718,12 @@ footer .copy { margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(2
 .cta-banner .btn-primary { background: #fff; color: var(--brand); border-color: #fff; }
 .cta-banner .btn-primary:hover { background: #fefbf4; color: var(--brand-dark); box-shadow: 0 4px 16px rgba(30,20,10,.18); }
 
+/* Tablet: grid-4 → 2 columns */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-5 { grid-template-columns: repeat(3, 1fr); }
+}
+
 /* =====================================================================
    RESPONSIVE — Mobile (768px and below)
    ===================================================================== */
@@ -915,6 +923,8 @@ footer .copy { margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(2
   .contact-strip { font-size: .75rem; padding: 5px 0; }
   .contact-strip .container { gap: 6px; }
 
+  .grid-4 { grid-template-columns: 1fr; }
+  .grid-5 { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; text-align: center; }
   .pricing-grid { grid-template-columns: 1fr; }
 }
