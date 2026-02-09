@@ -816,15 +816,15 @@ footer .copy { margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(2
 
   /* Mobile nav items — LEFT-aligned, clean, tappable */
   .nav-list > li {
-    border-bottom: 1px solid rgba(255,255,255,.08);
+    border-bottom: 1px solid rgba(255,255,255,.15);
     text-align: left;
   }
 
   .nav-list > li > a {
-    padding: 14px 0;
-    font-size: 1rem;
+    padding: 16px 0;
+    font-size: 1.0625rem;
     font-weight: 600;
-    color: #e2e8f0;
+    color: #f1f5f9;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -915,22 +915,27 @@ footer .copy { margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(2
     font-size: .9375rem;
   }
 
-  /* "For Risk Assessors" — subtle on mobile too */
+  /* "For Risk Assessors" — visible secondary button on mobile */
   .mobile-actions .btn-assessor {
-    color: rgba(255,255,255,.4);
+    color: rgba(255,255,255,.75);
     font-size: .8125rem;
-    font-weight: 500;
-    border: none;
-    padding: 6px 0;
+    font-weight: 600;
+    border: 1.5px solid rgba(255,255,255,.25);
+    padding: 10px 16px;
     text-align: center;
+    border-radius: 999px;
+    background: rgba(255,255,255,.06);
   }
 
-  .mobile-actions .btn-assessor:hover {
-    color: rgba(255,255,255,.65);
+  .mobile-actions .btn-assessor:hover,
+  .mobile-actions .btn-assessor:active {
+    color: #fff;
+    border-color: rgba(255,255,255,.45);
+    background: rgba(255,255,255,.1);
   }
 
-  /* "For Risk Assessors" in nav-list — hide if also in mobile-actions */
-  .nav-list .btn-assessor {
+  /* "For Risk Assessors" in nav-list — hide the nav-item version, keep the mobile-actions version */
+  .nav-list > li:not(.mobile-actions) .btn-assessor {
     display: none;
   }
 
