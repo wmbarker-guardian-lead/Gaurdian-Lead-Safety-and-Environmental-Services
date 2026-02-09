@@ -942,6 +942,18 @@ footer .copy { margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(2
   .grid-5 { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; text-align: center; }
   .pricing-grid { grid-template-columns: 1fr; }
+  .price-card { padding: 24px 16px; }
+  .price { font-size: 1.75rem; }
+  .price-card.featured { padding-top: 16px; }
+  .price-card.featured::before { top: -8px; font-size: .7rem; padding: 3px 12px; }
+}
+
+/* --- Extra-small screens (phones < 480px) --- */
+@media (max-width: 480px) {
+  .price { font-size: 1.5rem; overflow-wrap: break-word; }
+  .price-card { padding: 20px 12px; }
+  .features li { padding: 6px 0; }
+  .btn { padding: 14px 20px; }
 }
 
 /* --- Skip Link (accessibility) --- */
