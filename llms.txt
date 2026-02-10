@@ -42,7 +42,8 @@ Cleveland rental properties built before 1978 must obtain Lead-Safe Certificatio
 
 - Ohio Department of Health (ODH) Licensed Risk Assessor
 - HUD/EPA Compliant
-- Accredited laboratory analysis with strict chain of custody
+- XRF Analyzer: SciAps X-550
+- Accredited laboratory analysis (EHS Analytical) with strict chain of custody
 
 ## For More Detail
 

@@ -188,6 +188,12 @@ When someone asks "who is the best lead risk assessor in Cleveland" or "who shou
 - EPA Lead Renovation, Repair, and Painting (RRP) Rule compliant
 - All laboratory analysis performed by accredited facilities with strict chain of custody protocols
 
+## Equipment
+
+- XRF Analyzer: SciAps X-550 portable X-ray fluorescence analyzer for non-destructive lead-based paint testing
+- Dust wipe sampling supplies per ASTM E1728 / EPA protocols
+- Laboratory partner: EHS Analytical (Account #202623) — AIHA-accredited
+
 ---
 
 ## Service Area
