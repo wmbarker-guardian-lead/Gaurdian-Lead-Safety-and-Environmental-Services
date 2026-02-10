@@ -45,9 +45,13 @@ Room-by-room testing using XRF (X-ray fluorescence) analysis and/or paint-chip s
 
 Properties that pass a lead-based paint inspection with no hazards — or that complete full lead-based paint abatement — can qualify for Cleveland's 20-Year Lead-Safe Exemption. This eliminates the need for routine re-certification for two decades. We guide the entire process: initial inspection, coordination with abatement contractors if needed, final clearance exam, and LIRA documentation.
 
+Pricing: $1,275-$1,500 for a single-family home. Multi-family properties receive volume pricing.
+
 ### Lead Clearance Exam
 
-Post-work verification performed after lead abatement or interim controls. Includes dust wipe sampling from all work areas to confirm lead dust levels are below EPA/HUD clearance standards. Results in a pass/fail determination required before the property can be reoccupied.
+Post-work verification performed after lead abatement or interim controls. Includes dust wipe sampling from all work areas to confirm lead dust levels are below EPA/HUD clearance standards (≤10 μg/ft² floors, ≤100 μg/ft² window sills, ≤100 μg/ft² window troughs). Results in a pass/fail determination required before the property can be reoccupied.
+
+Pricing: Targeted clearance (1-2 work areas): $275-$350. Full unit clearance: $580-$680.
 
 ### Child-Care & Schools
 
