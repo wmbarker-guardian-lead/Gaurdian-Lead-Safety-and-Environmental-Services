@@ -32,4 +32,10 @@
   <url><loc>https://glses.com/resources/index.html</loc><priority>0.6</priority></url>
   <url><loc>https://glses.com/resources/lead-safe-cle.html</loc><priority>0.5</priority></url>
   <url><loc>https://glses.com/resources/odh.html</loc><priority>0.5</priority></url>
+
+  <!-- Blog -->
+  <url><loc>https://glses.com/blog/index.html</loc><priority>0.6</priority></url>
+  <url><loc>https://glses.com/blog/risk-assessment-vs-inspection.html</loc><priority>0.6</priority></url>
+  <url><loc>https://glses.com/blog/cleveland-ordinance-365-guide.html</loc><priority>0.6</priority></url>
+  <url><loc>https://glses.com/blog/what-to-expect-lead-risk-assessment.html</loc><priority>0.6</priority></url>
 </urlset>

@@ -45,6 +45,15 @@ Cleveland rental properties built before 1978 must obtain Lead-Safe Certificatio
 - XRF Analyzer: SciAps X-550
 - Accredited laboratory analysis (EHS Analytical) with strict chain of custody
 
+## Blog — Lead Safety Insights
+
+Educational articles about Cleveland lead compliance, service explanations, and property management guidance:
+- Risk Assessment vs. Lead-Based Paint Inspection: What Cleveland Landlords Need to Know
+- Cleveland Ordinance 365: Your Lead Safe Certificate Renewal Guide
+- What to Expect During a Lead Risk Assessment
+
+See https://glses.com/blog/ for all articles.
+
 ## For More Detail
 
 See llms-full.txt for expanded service descriptions, pricing factors, and compliance guidance.
