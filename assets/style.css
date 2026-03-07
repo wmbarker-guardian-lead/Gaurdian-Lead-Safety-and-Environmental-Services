@@ -667,9 +667,11 @@ footer, .site-footer {
 }
 
 footer p { margin: 4px 0; }
+footer .muted { color: inherit; }            /* override -- text-muted is for light bgs */
 footer strong { color: #e2e8f0; }
 footer a { color: var(--accent); text-decoration: none; }
 footer a:hover { color: var(--accent-dark); text-decoration: underline; }
+.footer-heading { color: #cbd5e1; font-weight: 700; font-size: .875rem; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 12px; }
 
 .footer-grid {
   display: grid;
@@ -697,7 +699,7 @@ footer a:hover { color: var(--accent-dark); text-decoration: underline; }
 .logo-row .logo-text { color: #e2e8f0; font-weight: 800; font-size: 1.0625rem; }
 
 /* Footer copyright */
-footer .copy { margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.08); font-size: .8125rem; color: #64748b; text-align: center; }
+footer .copy { margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.08); font-size: .8125rem; color: #94a3b8; text-align: center; }
 
 /* --- Trust Badges --- */
 .trust-bar {
