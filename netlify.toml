@@ -36,10 +36,115 @@
   status = 301
   force = true
 
-# Catch-all: any remaining .html → clean URL
+# Per-page .html → clean URL (Netlify splats don't support suffixes)
 [[redirects]]
-  from = "/*.html"
-  to = "/:splat"
+  from = "/contact.html"
+  to = "/contact"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/assistance/city-lhc.html"
+  to = "/assistance/city-lhc"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/assistance/county.html"
+  to = "/assistance/county"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/assistance/daycare.html"
+  to = "/assistance/daycare"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/assistance/lead-safe-home-fund.html"
+  to = "/assistance/lead-safe-home-fund"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/assistance/state-federal.html"
+  to = "/assistance/state-federal"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blog/cleveland-ordinance-365-guide.html"
+  to = "/blog/cleveland-ordinance-365-guide"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blog/risk-assessment-vs-inspection.html"
+  to = "/blog/risk-assessment-vs-inspection"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blog/what-to-expect-lead-risk-assessment.html"
+  to = "/blog/what-to-expect-lead-risk-assessment"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/process/after.html"
+  to = "/process/after"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/process/faq.html"
+  to = "/process/faq"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/process/prep.html"
+  to = "/process/prep"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/process/timeline.html"
+  to = "/process/timeline"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/resources/lead-safe-cle.html"
+  to = "/resources/lead-safe-cle"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/resources/odh.html"
+  to = "/resources/odh"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/services/child-care-schools.html"
+  to = "/services/child-care-schools"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/services/lead-based-paint-inspection.html"
+  to = "/services/lead-based-paint-inspection"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/services/lead-clearance-exam.html"
+  to = "/services/lead-clearance-exam"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/services/lead-risk-assessment.html"
+  to = "/services/lead-risk-assessment"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/services/multi-unit-programs.html"
+  to = "/services/multi-unit-programs"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/services/renovation-consulting.html"
+  to = "/services/renovation-consulting"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/services/report-generation.html"
+  to = "/services/report-generation"
   status = 301
   force = true
 
