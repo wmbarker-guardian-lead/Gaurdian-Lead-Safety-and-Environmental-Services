@@ -1,38 +1,88 @@
 [build]
   publish = "."
 
-# Redirect /services to /services/index.html etc.
+# Pretty URLs — 301 redirects .html extensions to clean paths
+# e.g., /contact.html → /contact, /services/index.html → /services/
+[build.processing]
+  skip_processing = false
+[build.processing.html]
+  pretty_urls = true
+
+# Section index rewrites (no-trailing-slash → index page)
 [[redirects]]
   from = "/services"
-  to = "/services/index.html"
-  status = 200
+  to = "/services/"
+  status = 301
 
 [[redirects]]
   from = "/assistance"
-  to = "/assistance/index.html"
-  status = 200
+  to = "/assistance/"
+  status = 301
 
 [[redirects]]
   from = "/resources"
-  to = "/resources/index.html"
-  status = 200
+  to = "/resources/"
+  status = 301
 
+[[redirects]]
+  from = "/blog"
+  to = "/blog/"
+  status = 301
+
+# Merged/removed pages — redirect both .html and clean URLs
 # Daycare page merged into Child-Care & Schools
 [[redirects]]
+  from = "/services/daycare-facility"
+  to = "/services/child-care-schools"
+  status = 301
+
+[[redirects]]
   from = "/services/daycare-facility.html"
-  to = "/services/child-care-schools.html"
+  to = "/services/child-care-schools"
+  status = 301
+
+# Legacy clearance-exam → primary lead-clearance-exam page
+[[redirects]]
+  from = "/services/clearance-exam"
+  to = "/services/lead-clearance-exam"
+  status = 301
+
+[[redirects]]
+  from = "/services/clearance-exam.html"
+  to = "/services/lead-clearance-exam"
   status = 301
 
 # Dust Wipe Sampling removed — redirect to Lead Clearance Exam
 [[redirects]]
+  from = "/services/dust-wipe-sampling"
+  to = "/services/lead-clearance-exam"
+  status = 301
+
+[[redirects]]
   from = "/services/dust-wipe-sampling.html"
-  to = "/services/lead-clearance-exam.html"
+  to = "/services/lead-clearance-exam"
+  status = 301
+
+# Dust Soil Sampling removed — redirect to Lead Risk Assessment
+[[redirects]]
+  from = "/services/dust-soil-sampling"
+  to = "/services/lead-risk-assessment"
+  status = 301
+
+[[redirects]]
+  from = "/services/dust-soil-sampling.html"
+  to = "/services/lead-risk-assessment"
   status = 301
 
 # 20-Year Exemption merged into Lead-Based Paint Inspection
 [[redirects]]
+  from = "/services/20-year-exemption"
+  to = "/services/lead-based-paint-inspection"
+  status = 301
+
+[[redirects]]
   from = "/services/20-year-exemption.html"
-  to = "/services/lead-based-paint-inspection.html"
+  to = "/services/lead-based-paint-inspection"
   status = 301
 
 # Security headers
