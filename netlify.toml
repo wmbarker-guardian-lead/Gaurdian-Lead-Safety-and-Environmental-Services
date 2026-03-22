@@ -83,6 +83,21 @@
   status = 301
   force = true
 [[redirects]]
+  from = "/blog/multi-unit-lead-compliance-portfolio.html"
+  to = "/blog/multi-unit-lead-compliance-portfolio"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blog/spring-property-turnover-lead-certificate.html"
+  to = "/blog/spring-property-turnover-lead-certificate"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blog/what-happens-after-lead-risk-assessment-finds-hazards.html"
+  to = "/blog/what-happens-after-lead-risk-assessment-finds-hazards"
+  status = 301
+  force = true
+[[redirects]]
   from = "/process/after.html"
   to = "/process/after"
   status = 301
