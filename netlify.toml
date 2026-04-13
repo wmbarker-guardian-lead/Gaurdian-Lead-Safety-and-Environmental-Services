@@ -43,6 +43,11 @@
   status = 301
   force = true
 [[redirects]]
+  from = "/thanks.html"
+  to = "/thanks"
+  status = 301
+  force = true
+[[redirects]]
   from = "/assistance/city-lhc.html"
   to = "/assistance/city-lhc"
   status = 301
@@ -257,4 +262,12 @@
 [[headers]]
   for = "/assets/*"
   [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+# vCard file — ensure correct MIME type for contact downloads
+[[headers]]
+  for = "/guardian-lead-safety.vcf"
+  [headers.values]
+    Content-Type = "text/vcard; charset=utf-8"
+    Content-Disposition = "attachment; filename=\"guardian-lead-safety.vcf\""
     Cache-Control = "public, max-age=3600, must-revalidate"
