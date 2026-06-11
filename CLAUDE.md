@@ -152,3 +152,16 @@ All pages follow a unified template:
 
 ## Related Projects
 - **Lead Risk Assessment App**: `C:\Users\wmbar\.gemini\antigravity\lead-risk-assessment-app` — Desktop app for generating lead inspection reports, planned web version for SaaS offering
+
+## Status Updates
+
+### 2026-06-11 — SEO/AEO pass (dedupe GA, FAQPage schema, robots fix, pricing page)
+- **Google Analytics dedupe**: Removed the duplicate `gtag.js` block that had been injected inside `<header>` on 24 pages. The single copy in `<head>` is retained. Every HTML page now loads `gtag.js` exactly once.
+- **robots.txt**: The invalid `Sitemap: https://glses.com/llms.txt` line (llms.txt is not a sitemap) was converted to a comment. The real sitemap declaration (`sitemap.xml`) is unchanged.
+- **index.html**: Added `FAQPage` JSON-LD before `</head>`, mirroring the six visible Q&As in the "Questions Property Managers Ask" section.
+- **New page `pricing.html`** (root): Public pricing page built from the canonical Pricing Reference in `llms-full.txt`. Reuses the standard header/nav/contact-strip/footer and `.pricing-grid`/`.price-card` components. Includes `ItemList` + `Offer`/`AggregateOffer` JSON-LD. Clean URL `/pricing`.
+- **netlify.toml**: Added 5 redirects — `/pricing.html` → `/pricing`, plus the 4 previously-missing blog post `.html` → clean-URL redirects (lead-clearance-exam-cleveland, lead-paint-renovation-rrp-rule-cleveland, lead-paint-risk-cleveland-home-sales, out-of-state-landlord-cleveland-lead-compliance).
+- **sitemap.xml**: Added `/pricing` (priority 0.9) and bumped the homepage `lastmod` to 2026-06-11.
+- **Navigation & footer**: Added a "Pricing" link to the nav and footer on every page.
+
+> Note: the **File Structure** and **Pages** counts earlier in this file predate the `blog/` section, `pricing.html`, `thanks.html`, and `services/report-generation.html`, and list several service pages that have since been merged/removed (now handled via redirects in `netlify.toml`). Treat the live repo as the source of truth.

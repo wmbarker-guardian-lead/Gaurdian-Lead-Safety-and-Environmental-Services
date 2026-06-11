@@ -7,4 +7,5 @@ Sitemap: https://glses.com/sitemap.xml
 # See https://llmstxt.org for specification
 # llms.txt: concise company overview for AI systems
 # llms-full.txt: detailed service descriptions and context
-Sitemap: https://glses.com/llms.txt
+# Note: llms.txt is not a sitemap and is intentionally not declared as one.
+# AI crawler reference: https://glses.com/llms.txt

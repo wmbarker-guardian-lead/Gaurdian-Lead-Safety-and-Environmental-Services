@@ -48,6 +48,11 @@
   status = 301
   force = true
 [[redirects]]
+  from = "/pricing.html"
+  to = "/pricing"
+  status = 301
+  force = true
+[[redirects]]
   from = "/assistance/city-lhc.html"
   to = "/assistance/city-lhc"
   status = 301
@@ -100,6 +105,26 @@
 [[redirects]]
   from = "/blog/what-happens-after-lead-risk-assessment-finds-hazards.html"
   to = "/blog/what-happens-after-lead-risk-assessment-finds-hazards"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blog/lead-clearance-exam-cleveland.html"
+  to = "/blog/lead-clearance-exam-cleveland"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blog/lead-paint-renovation-rrp-rule-cleveland.html"
+  to = "/blog/lead-paint-renovation-rrp-rule-cleveland"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blog/lead-paint-risk-cleveland-home-sales.html"
+  to = "/blog/lead-paint-risk-cleveland-home-sales"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blog/out-of-state-landlord-cleveland-lead-compliance.html"
+  to = "/blog/out-of-state-landlord-cleveland-lead-compliance"
   status = 301
   force = true
 [[redirects]]
