@@ -111,6 +111,19 @@
     });
   });
 
+  /* --- Mobile CTA bar (sticky Call / Get a Quote, mobile only) --- */
+  /* Injected here (shared JS) so it appears on every page without editing
+     individual HTML files. Styling + mobile-only visibility live in style.css.
+     Absolute hrefs so links work from any subdirectory depth. */
+  if (!document.querySelector('.mobile-cta-bar')) {
+    var ctaBar = document.createElement('div');
+    ctaBar.className = 'mobile-cta-bar';
+    ctaBar.innerHTML =
+      '<a class="mcb-call" href="tel:+12168008259" aria-label="Call Guardian Lead Safety at (216) 800-8259">Call Now</a>' +
+      '<a class="mcb-quote" href="/contact" aria-label="Request a free quote">Get a Quote</a>';
+    document.body.appendChild(ctaBar);
+  }
+
   /* --- Dynamic year in footer --- */
   var year = new Date().getFullYear();
   document.querySelectorAll('#year, #y').forEach(function (el) {

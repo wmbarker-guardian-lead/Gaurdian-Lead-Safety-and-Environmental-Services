@@ -972,3 +972,76 @@ footer .copy { margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(2
   a { color: #000; text-decoration: underline; }
   .card { border: 1px solid #ccc; box-shadow: none; break-inside: avoid; }
 }
+
+/* ===================================================================
+   Mobile CTA Bar — sticky Call / Get a Quote bar (mobile only)
+   Injected as the last child of <body> by assets/app.js.
+   Hidden by default; revealed only at <=768px. Uses brand tokens
+   (--brand, --accent). Body gets bottom padding at <=768px so the
+   fixed bar never covers footer content.
+   =================================================================== */
+.mobile-cta-bar {
+  display: none;            /* hidden by default — desktop never shows it */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 150;             /* above page content, below skip-link (200) */
+  box-shadow: 0 -2px 12px rgba(30, 20, 10, .15);
+  /* iOS safe-area: keep buttons clear of the home indicator */
+  padding-bottom: env(safe-area-inset-bottom);
+  background: var(--brand); /* fills the safe-area inset with brand color */
+}
+
+.mobile-cta-bar a {
+  flex: 1;                  /* two equal-width buttons */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.2;
+  white-space: nowrap;      /* never wrap the labels */
+  transition: background var(--transition);
+}
+
+.mobile-cta-bar .mcb-call {
+  background: var(--brand);
+  color: #fff;
+}
+.mobile-cta-bar .mcb-call:hover,
+.mobile-cta-bar .mcb-call:active {
+  background: var(--brand-dark);
+}
+
+.mobile-cta-bar .mcb-quote {
+  background: var(--accent);
+  color: #1e293b;           /* dark text on amber for AA contrast */
+}
+.mobile-cta-bar .mcb-quote:hover,
+.mobile-cta-bar .mcb-quote:active {
+  background: var(--accent-dark);
+  color: #fff;
+}
+
+/* Keyboard focus ring (no global focus-visible rule exists site-wide) */
+.mobile-cta-bar a:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: -4px;
+}
+
+/* Show the bar only on mobile, and reserve space so it can't cover content */
+@media (max-width: 768px) {
+  .mobile-cta-bar { display: flex; }
+  /* Bar height (52px) + iOS safe-area inset */
+  body { padding-bottom: calc(52px + env(safe-area-inset-bottom)); }
+}
+
+/* Never print the CTA bar */
+@media print {
+  .mobile-cta-bar { display: none !important; }
+}
