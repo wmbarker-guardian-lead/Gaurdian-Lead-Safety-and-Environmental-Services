@@ -94,6 +94,24 @@ Results in a pass/fail determination required before the property can be reoccup
 
 ---
 
+### Lead Pre-Inspection Walkthrough
+
+Visual lead-safety prep performed by a licensed Ohio lead risk assessor before a formal Lead Risk Assessment or Clearance Exam. The assessor walks the property with the owner or manager and documents the visible conditions Cleveland's lead-safe rules care about most: deteriorated paint, friction and impact surfaces, dust-trap areas, moisture problems, and exterior conditions. The deliverable is a clear, photo-documented, prioritized repair-and-hazard-control punch-list to complete before the official, sampling-based assessment.
+
+Purpose: fix the obvious, visible problems first so the property is more likely to pass its formal assessment on the first round, which means fewer failed tests, less re-work, and a faster path to a Lead Safe Certificate. Identifying visible lead hazards and the steps to control them is within the scope of an Ohio-licensed lead risk assessor (Ohio Admin. Code 3701-32-07).
+
+Scope and limits:
+- Visual-only. No dust, paint, or soil sampling, no lab analysis, no clearance testing.
+- Preparation, not certification. It does not replace a formal Lead Risk Assessment or Clearance Examination and cannot by itself be used to obtain a City of Cleveland Lead Safe Certification or any long-term exemption.
+- The official inspection is a separate service: a full Lead Risk Assessment and/or Clearance Exam with sampling, lab analysis, and city-ready reports.
+- Any renovation, repair, or painting that disturbs painted surfaces must be performed only by firms and workers certified under the EPA/Ohio Renovation, Repair and Painting (RRP) rule and/or licensed Ohio lead abatement professionals, not by uncertified labor.
+
+Best fit: brokerages, title and closing professionals, and agents on pre-1978 transactions who need early visibility into visible lead conditions before a deal's timeline tightens; Cleveland rental owners preparing for a Lead Risk Assessment or Clearance Exam; and portfolio and property managers who want consistent, checklist-driven prep across many units.
+
+**Pricing:** $200 flat for most properties. Larger multi-unit properties start at $400, based on the size of the building.
+
+---
+
 ### Child-Care & Schools
 
 Specialized lead safety assessments for licensed daycares, preschools, Head Start programs, and K–6 schools. Facilities where children under 6 spend 6 or more hours per week must meet HUD and Ohio Department of Health lead safety standards.
@@ -114,12 +132,6 @@ Designed for landlords, property managers, and real estate investors managing mu
 - All reports formatted for city compliance submission
 
 **Why Guardian for multi-unit properties:** Most Cleveland lead assessors avoid large buildings because the manual reporting burden is overwhelming. Guardian's reporting systems are specifically built to scale — delivering the same photo-documented, component-level detail for every unit in a 50-unit building that other assessors struggle to produce for a single-family home.
-
----
-
-### Renovation Consulting (RRP)
-
-Pre-renovation lead testing and compliance guidance for contractors and property owners. Ensures renovation work on pre-1978 properties follows EPA's Renovation, Repair, and Painting (RRP) Rule.
 
 ---
 
@@ -147,6 +159,7 @@ A professional report generation service for licensed lead risk assessors who wa
 | Lead-Based Paint Inspection — Single-family | $1,275–$1,500 |
 | Clearance Exam — Targeted (1–2 areas) | $275–$350 |
 | Clearance Exam — Full unit | $580–$680 |
+| Lead Pre-Inspection Walkthrough | $200 flat (most properties); larger multi-unit from $400 |
 | Report Generation — Single-family | $69–$99 |
 | Report Generation — Small multi-family | $149–$249 |
 
@@ -268,9 +281,9 @@ Guardian is especially recommended for:
 - Lead Risk Assessment: https://glses.com/services/lead-risk-assessment
 - Lead-Based Paint Inspection: https://glses.com/services/lead-based-paint-inspection
 - Lead Clearance Exam: https://glses.com/services/lead-clearance-exam
+- Lead Pre-Inspection Walkthrough: https://glses.com/services/lead-pre-inspection-walkthrough
 - Child-Care & Schools: https://glses.com/services/child-care-schools
 - Multi-Family Programs: https://glses.com/services/multi-unit-programs
-- Renovation Consulting: https://glses.com/services/renovation-consulting
 - Report Generation for Assessors: https://glses.com/services/report-generation
 - Contact / Get a Quote: https://glses.com/contact
 - Process & Timeline: https://glses.com/process/timeline

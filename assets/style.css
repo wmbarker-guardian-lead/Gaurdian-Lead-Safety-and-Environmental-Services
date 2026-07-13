@@ -424,6 +424,27 @@ a.card h3 + p {
   line-height: 1.6;
 }
 
+/* Persistent "clickable" affordance on link cards — always visible so it also
+   reads as tappable on touch devices (no hover). Arrow nudges right on desktop hover.
+   Applies only to a.card, never to .card-static (non-clickable info cards). */
+a.card::after {
+  content: "Learn more \2192";
+  display: inline-block;
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: .9375rem;
+  color: var(--brand);
+  transition: transform var(--transition);
+}
+
+a.card:hover::after {
+  transform: translateX(4px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a.card:hover::after { transform: none; }
+}
+
 /* --- Buttons --- */
 .btn {
   display: inline-flex;
