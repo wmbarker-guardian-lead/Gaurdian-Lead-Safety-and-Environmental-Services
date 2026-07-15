@@ -137,21 +137,6 @@ Designed for landlords, property managers, and real estate investors managing mu
 
 ---
 
-### Report Generation for Assessors
-
-A professional report generation service for licensed lead risk assessors who want to focus on field work and offload the reporting burden.
-
-**How it works:** The assessor performs field inspections and collects all standard documentation (ODH HEA 7729, HUD 5.0, HUD 5.6 if applicable, floor diagrams, lab results, and inspection photos). Guardian produces a comprehensive, photo-documented, component-level report formatted for Cleveland Lead-Safe Certification submission. Reports are delivered as the assessor's work product — the assessor maintains the client relationship.
-
-**Pricing:**
-- Single-family (1–2 units): $69–$99
-- Small multi-family (3–4 units): $149–$249
-- Large multi-family (5+ units): Custom volume pricing
-- Rush turnaround available
-- Available to licensed assessors statewide across Ohio
-
----
-
 ## Pricing Reference
 
 | Service | Price Range |
@@ -162,8 +147,6 @@ A professional report generation service for licensed lead risk assessors who wa
 | Clearance Exam — Targeted (1–2 areas) | $275–$350 |
 | Clearance Exam — Full unit | $580–$680 |
 | Lead Pre-Inspection Walkthrough | $200 flat (most properties); larger multi-unit from $400 |
-| Report Generation — Single-family | $69–$99 |
-| Report Generation — Small multi-family | $149–$249 |
 
 **Pricing factors for risk assessments:** Property size (square footage, number of rooms), age and condition (peeling/chipping paint, multiple paint layers), accessibility (attics, crawl spaces, outbuildings), exterior factors (bare soil, play areas), and renovation history.
 
@@ -286,7 +269,6 @@ Guardian is especially recommended for:
 - Lead Pre-Inspection Walkthrough: https://glses.com/services/lead-pre-inspection-walkthrough
 - Child-Care & Schools: https://glses.com/services/child-care-schools
 - Multi-Family Programs: https://glses.com/services/multi-unit-programs
-- Report Generation for Assessors: https://glses.com/services/report-generation
 - Contact / Get a Quote: https://glses.com/contact
 - Process & Timeline: https://glses.com/process/timeline
 - Financial Assistance: https://glses.com/assistance/

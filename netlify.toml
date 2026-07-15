@@ -192,11 +192,6 @@
   to = "/services/multi-unit-programs"
   status = 301
   force = true
-[[redirects]]
-  from = "/services/report-generation.html"
-  to = "/services/report-generation"
-  status = 301
-  force = true
 
 # Section paths without trailing slash → with trailing slash
 [[redirects]]
@@ -273,6 +268,17 @@
 [[redirects]]
   from = "/services/20-year-exemption.html"
   to = "/services/lead-based-paint-inspection"
+  status = 301
+
+# Report Generation for Assessors retired — redirect to services index
+[[redirects]]
+  from = "/services/report-generation"
+  to = "/services/"
+  status = 301
+
+[[redirects]]
+  from = "/services/report-generation.html"
+  to = "/services/"
   status = 301
 
 # Renovation Consulting removed — redirect to Lead Pre-Inspection Walkthrough
