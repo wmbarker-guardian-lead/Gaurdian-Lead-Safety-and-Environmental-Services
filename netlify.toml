@@ -270,6 +270,17 @@
   to = "/services/lead-based-paint-inspection"
   status = 301
 
+# Renovation Consulting removed — redirect to Lead Pre-Inspection Walkthrough
+[[redirects]]
+  from = "/services/renovation-consulting"
+  to = "/services/lead-pre-inspection-walkthrough"
+  status = 301
+
+[[redirects]]
+  from = "/services/renovation-consulting.html"
+  to = "/services/lead-pre-inspection-walkthrough"
+  status = 301
+
 # Security headers
 [[headers]]
   for = "/*"
