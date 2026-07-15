@@ -128,6 +128,11 @@
   status = 301
   force = true
 [[redirects]]
+  from = "/blog/lead-pre-inspection-walkthrough.html"
+  to = "/blog/lead-pre-inspection-walkthrough"
+  status = 301
+  force = true
+[[redirects]]
   from = "/process/after.html"
   to = "/process/after"
   status = 301
