@@ -173,6 +173,11 @@
   status = 301
   force = true
 [[redirects]]
+  from = "/services/lead-pre-inspection-walkthrough.html"
+  to = "/services/lead-pre-inspection-walkthrough"
+  status = 301
+  force = true
+[[redirects]]
   from = "/services/lead-risk-assessment.html"
   to = "/services/lead-risk-assessment"
   status = 301
@@ -180,11 +185,6 @@
 [[redirects]]
   from = "/services/multi-unit-programs.html"
   to = "/services/multi-unit-programs"
-  status = 301
-  force = true
-[[redirects]]
-  from = "/services/renovation-consulting.html"
-  to = "/services/renovation-consulting"
   status = 301
   force = true
 [[redirects]]

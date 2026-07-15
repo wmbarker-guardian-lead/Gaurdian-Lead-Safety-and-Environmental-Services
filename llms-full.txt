@@ -96,9 +96,11 @@ Results in a pass/fail determination required before the property can be reoccup
 
 ### Lead Pre-Inspection Walkthrough
 
-Visual lead-safety prep performed by a licensed Ohio lead risk assessor before a formal Lead Risk Assessment or Clearance Exam. The assessor walks the property with the owner or manager and documents the visible conditions Cleveland's lead-safe rules care about most: deteriorated paint, friction and impact surfaces, dust-trap areas, moisture problems, and exterior conditions. The deliverable is a clear, photo-documented, prioritized repair-and-hazard-control punch-list to complete before the official, sampling-based assessment.
+Visual-only, preparatory lead-safety walkthrough by a licensed Ohio lead risk assessor, built for real estate buyers, investors, and agents on pre-1978 properties, and for rental owners preparing for a formal Lead Risk Assessment. The assessor walks the property and documents the visible conditions that drive lead cost and risk: deteriorated paint, friction and impact surfaces, dust-trap areas, moisture problems, and exterior conditions. The deliverable is a clear, dated, photo-documented, prioritized repair-and-hazard-control punch-list of suspected and potential lead conditions.
 
-Purpose: fix the obvious, visible problems first so the property is more likely to pass its formal assessment on the first round, which means fewer failed tests, less re-work, and a faster path to a Lead Safe Certificate. Identifying visible lead hazards and the steps to control them is within the scope of an Ohio-licensed lead risk assessor (Ohio Admin. Code 3701-32-07).
+Purpose, real estate transactions: surface potential lead conditions before the purchase price, rehab budget, and timeline are locked in. It fits inside a standard inspection contingency window, scheduled alongside the general home inspection. On most pre-1978 sales the federal lead disclosure says "no known lead-based paint hazards," usually because no one has ever looked; a walkthrough is often the first documented look.
+
+Purpose, rental prep: fix the obvious, visible problems first so the property is more likely to pass its formal assessment on the first round, which means fewer failed tests, less re-work, and a faster path to a Lead Safe Certificate. Documenting suspected and potential lead conditions and the strategies to control them is within the scope of an Ohio-licensed lead risk assessor (Ohio Admin. Code 3701-32-07).
 
 Scope and limits:
 - Visual-only. No dust, paint, or soil sampling, no lab analysis, no clearance testing.
@@ -106,7 +108,7 @@ Scope and limits:
 - The official inspection is a separate service: a full Lead Risk Assessment and/or Clearance Exam with sampling, lab analysis, and city-ready reports.
 - Any renovation, repair, or painting that disturbs painted surfaces must be performed only by firms and workers certified under the EPA/Ohio Renovation, Repair and Painting (RRP) rule and/or licensed Ohio lead abatement professionals, not by uncertified labor.
 
-Best fit: brokerages, title and closing professionals, and agents on pre-1978 transactions who need early visibility into visible lead conditions before a deal's timeline tightens; Cleveland rental owners preparing for a Lead Risk Assessment or Clearance Exam; and portfolio and property managers who want consistent, checklist-driven prep across many units.
+Best fit: brokerages, title and closing professionals, and agents on pre-1978 transactions who need early visibility into potential lead conditions before a deal's timeline tightens; Cleveland rental owners preparing for a Lead Risk Assessment or Clearance Exam; and portfolio and property managers who want consistent, checklist-driven prep across many units.
 
 **Pricing:** $200 flat for most properties. Larger multi-unit properties start at $400, based on the size of the building.
 
