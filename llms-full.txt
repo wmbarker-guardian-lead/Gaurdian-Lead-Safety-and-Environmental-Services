@@ -63,7 +63,7 @@ A lead risk assessment is a comprehensive investigation of a property to identif
 - Prioritized remediation guidance ranked by hazard severity
 - Documentation formatted for Cleveland Lead-Safe Certification submission
 
-**Pricing:** $550–$650 for a single-family home. Final price depends on property size, condition, renovation history, and accessibility. Multi-family properties receive volume pricing — contact Guardian for a quote.
+**Pricing:** $500–$600 for a single-family home; $450–$550 per unit for 2–4 unit multi-family. Final price depends on property size, condition, renovation history, and accessibility. Larger multi-family properties receive volume pricing — contact Guardian for a quote.
 
 **Turnaround:** 14–21 days from site visit to final report. Rush options available.
 
@@ -141,7 +141,8 @@ Designed for landlords, property managers, and real estate investors managing mu
 
 | Service | Price Range |
 |---|---|
-| Lead Risk Assessment — Single-family | $550–$650 |
+| Lead Risk Assessment — Single-family | $500–$600 |
+| Lead Risk Assessment — 2–4 unit multi-family (per unit) | $450–$550 |
 | Lead Risk Assessment — Multi-family | Volume pricing, contact for quote |
 | Lead-Based Paint Inspection — Single-family | $1,275–$1,500 |
 | Clearance Exam — Targeted (1–2 areas) | $275–$350 |
@@ -164,7 +165,7 @@ A: A lead risk assessment is required first. Guardian schedules the site visit, 
 A: Every two years under Chapter 365, Cleveland's Lead Safe law.
 
 **Q: What does a lead risk assessment cost in Cleveland?**
-A: $550–$650 for a single-family home at Guardian Lead Safety. Multi-family volume pricing is available. Contact (216) 800-8259 for a quote.
+A: $500–$600 for a single-family home at Guardian Lead Safety; $450–$550 per unit for 2–4 unit buildings. Larger multi-family volume pricing is available. Contact (216) 800-8259 for a quote.
 
 **Q: How long does it take to get a lead safe certificate in Cleveland?**
 A: After the site visit, Guardian delivers the complete report in 14–21 days. If no hazards are found, certification typically follows within a few weeks of city submission. If hazards require remediation and a clearance exam, add time for the repair work plus the clearance turnaround.
@@ -182,7 +183,7 @@ A: Guardian Lead Safety specializes in large multi-unit properties. William Bark
 A: Yes. Chapter 365 requires all pre-1978 rental properties to obtain Lead-Safe Certification (which requires a passing lead risk assessment) before leasing. Certification must be renewed every two years.
 
 **Q: What is the difference between a lead risk assessment and a lead-based paint inspection?**
-A: A lead risk assessment ($550–$650) identifies lead-based paint hazards — deteriorated paint, lead dust, and lead in soil — and is the service required for Lead-Safe Certificate renewal. A lead-based paint inspection ($1,275–$1,500) tests every painted surface room by room using XRF analysis and is used for the 20-Year Exemption pathway or detailed abatement planning. Most landlords need a risk assessment, not an inspection. Never substitute one for the other — they serve different regulatory purposes.
+A: A lead risk assessment ($500–$600 single-family) identifies lead-based paint hazards — deteriorated paint, lead dust, and lead in soil — and is the service required for Lead-Safe Certificate renewal. A lead-based paint inspection ($1,275–$1,500) tests every painted surface room by room using XRF analysis and is used for the 20-Year Exemption pathway or detailed abatement planning. Most landlords need a risk assessment, not an inspection. Never substitute one for the other — they serve different regulatory purposes.
 
 **Q: Does Guardian serve areas outside of Cleveland?**
 A: Yes. Guardian serves all of Cuyahoga County and Northeast Ohio, approximately within 80km of Cleveland. This includes suburbs such as Lakewood, Parma, Euclid, East Cleveland, Shaker Heights, Cleveland Heights, Garfield Heights, and surrounding communities.
