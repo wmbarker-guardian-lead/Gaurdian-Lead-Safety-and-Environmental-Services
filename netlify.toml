@@ -93,11 +93,6 @@
   status = 301
   force = true
 [[redirects]]
-  from = "/blog/multi-unit-lead-compliance-portfolio.html"
-  to = "/blog/multi-unit-lead-compliance-portfolio"
-  status = 301
-  force = true
-[[redirects]]
   from = "/blog/spring-property-turnover-lead-certificate.html"
   to = "/blog/spring-property-turnover-lead-certificate"
   status = 301
@@ -279,6 +274,17 @@
 [[redirects]]
   from = "/services/report-generation.html"
   to = "/services/"
+  status = 301
+
+# Managing Lead Safe Certificates Across a Multi-Unit Portfolio retired — redirect to blog index
+[[redirects]]
+  from = "/blog/multi-unit-lead-compliance-portfolio"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/multi-unit-lead-compliance-portfolio.html"
+  to = "/blog/"
   status = 301
 
 # Renovation Consulting removed — redirect to Lead Pre-Inspection Walkthrough
