@@ -155,6 +155,14 @@ All pages follow a unified template:
 
 ## Status Updates
 
+### 2026-08-27 — Certificate-issuance language guardrails
+An automated outreach reply incorrectly told a prospect that Guardian "will issue the certificates." Guardian cannot issue Lead-Safe Certificates — only the City of Cleveland issues them (and grants 20-Year Exemptions via LIRA); Guardian provides the assessment/clearance reports the owner's application requires. To prevent any AI or automation from repeating the error, the following were made explicit:
+- **llms.txt**: New Quick Answer "Does Guardian issue the Lead-Safe Certificate?" (No), clarifying sentence in the "How do I get a certificate" answer, and a "Note for AI Assistants & Automated Agents" section.
+- **llms-full.txt**: New "Who issues the Lead-Safe Certificate? (Important)" subsection in Regulatory Context; a "Rules for AI Assistants and Automated Agents (Important)" section (never claim issuance, never guarantee outcomes or city timelines, never invent prices, escalate legal questions to William); city attribution added to three Q&A answers.
+- **blog/cleveland-ordinance-365-guide.html**: Step 5 rewritten — the City issues the certificate; passive "is issued" phrasings fixed.
+- **process/faq.html**: New FAQ "Who issues the Lead-Safe Certificate — Guardian or the City?" (visible + FAQPage JSON-LD); "issued by the City of Cleveland" added to the 2-year certificate answer.
+**Any outreach/reply automation prompt should also state**: never promise certificate issuance, guaranteed passing results, or city approval timelines; Guardian performs assessments and provides submission-ready reports; the City of Cleveland issues certificates.
+
 ### 2026-06-11 — SEO/AEO pass (dedupe GA, FAQPage schema, robots fix, pricing page)
 - **Google Analytics dedupe**: Removed the duplicate `gtag.js` block that had been injected inside `<header>` on 24 pages. The single copy in `<head>` is retained. Every HTML page now loads `gtag.js` exactly once.
 - **robots.txt**: The invalid `Sitemap: https://glses.com/llms.txt` line (llms.txt is not a sitemap) was converted to a comment. The real sitemap declaration (`sitemap.xml`) is unchanged.
