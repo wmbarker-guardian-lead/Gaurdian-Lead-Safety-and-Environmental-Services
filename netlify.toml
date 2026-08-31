@@ -5,6 +5,19 @@
 # Netlify serves .html files at both /page.html and /page with no redirect.
 # Google sees these as duplicate URLs. These rules 301-redirect .html → clean.
 
+# Internal files: never serve publicly (must come first)
+[[redirects]]
+  from = "/HANDOFF.md"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/HANDOFF"
+  to = "/404.html"
+  status = 404
+  force = true
+
 # Index files: redirect to directory path (must come before catch-all)
 [[redirects]]
   from = "/index.html"

@@ -1,5 +1,7 @@
 # CLAUDE.md — Guardian Lead Safety Website
 
+> 🚨 **ACTIVE HANDOFF — READ `HANDOFF.md` FIRST.** Outreach/client-facing drafting must never claim Guardian issues Lead-Safe Certificates — the City of Cleveland issues them. Binding rules and the remaining checklist are in `HANDOFF.md` at the repo root. Remove this banner and that file when the checklist is complete.
+
 ## Project Overview
 Professional business website for **Guardian Lead Safety & Environmental Services**, a licensed lead inspection company serving Greater Cleveland & Northeast Ohio.
 
